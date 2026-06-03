@@ -1,0 +1,84 @@
+{
+  "dataset": "IBM Telco Customer Churn (7,043 clients)",
+  "best_model": "XGBoost",
+  "best_threshold": 0.48,
+  "all_models": {
+    "LogisticRegression": {
+      "best_params": {
+        "C": 0.1
+      },
+      "cv_roc_auc": 0.8492649280033502,
+      "optimal_threshold": 0.48,
+      "val_accuracy": 0.8083491461100569,
+      "test_metrics": {
+        "model": "LogisticRegression",
+        "threshold": 0.48,
+        "accuracy": 0.8136234626300851,
+        "precision": 0.6781115879828327,
+        "recall": 0.5642857142857143,
+        "f1": 0.6159844054580896,
+        "roc_auc": 0.8537621805478949
+      }
+    },
+    "RandomForest": {
+      "best_params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "max_depth": 8
+      },
+      "cv_roc_auc": 0.8450774512849352,
+      "optimal_threshold": 0.48,
+      "val_accuracy": 0.8045540796963947,
+      "test_metrics": {
+        "model": "RandomForest",
+        "threshold": 0.48,
+        "accuracy": 0.8051087984862819,
+        "precision": 0.6666666666666666,
+        "recall": 0.5285714285714286,
+        "f1": 0.5896414342629482,
+        "roc_auc": 0.8558259790402647
+      }
+    },
+    "GradientBoosting": {
+      "best_params": {
+        "n_estimators": 150,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      },
+      "cv_roc_auc": 0.8488298925690934,
+      "optimal_threshold": 0.53,
+      "val_accuracy": 0.8026565464895635,
+      "test_metrics": {
+        "model": "GradientBoosting",
+        "threshold": 0.53,
+        "accuracy": 0.8003784295175024,
+        "precision": 0.6751269035532995,
+        "recall": 0.475,
+        "f1": 0.5576519916142557,
+        "roc_auc": 0.8553939143224858
+      }
+    },
+    "XGBoost": {
+      "best_params": {
+        "subsample": 1.0,
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 1.0
+      },
+      "cv_roc_auc": 0.845359922135442,
+      "optimal_threshold": 0.48,
+      "val_accuracy": 0.8055028462998103,
+      "test_metrics": {
+        "model": "XGBoost",
+        "threshold": 0.48,
+        "accuracy": 0.8060548722800378,
+        "precision": 0.6556016597510373,
+        "recall": 0.5642857142857143,
+        "f1": 0.6065259117082533,
+        "roc_auc": 0.8572830483544769
+      }
+    }
+  }
+}
